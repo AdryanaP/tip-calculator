@@ -1,0 +1,23 @@
+.buttonReset {
+    background: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    border: none;
+    padding: 5px;
+    width: 10rem;
+    border-radius: 5px;
+    margin-top: 2.5rem;
+}
+
+.buttonReset:hover {
+    background: var(--light-cyan);
+    transition: 300ms ease-in-out
+}
+
+@media (max-width: 375px) {
+    .buttonReset {
+        width: 100%;
+        padding: 15px;
+        font-size: 26px;
+        margin-top: 0.5rem;
+    }
+}

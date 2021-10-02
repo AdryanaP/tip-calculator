@@ -1,0 +1,53 @@
+.text {
+    font-size: 12px;
+    margin-top: 1.2rem;
+    color: var(--medium-grayish-cyan);
+}
+
+.text:before {
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 11px;
+    top: 10.2rem;
+    margin-left: 10px;
+    background: url(../public/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input {
+    background: var(--light-cyan);
+    color: var(--very-dark-cyan);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    text-align: end;
+    width: 245px;
+}
+
+.input:focus {
+    outline: none;
+    border: 2px solid var(--strong-cyan);
+}
+
+@media (max-width: 375px) {
+    .text {
+        font-size: 18px;
+    }
+    
+    .text:before {
+        top: 10.9rem;
+        margin-left: 15px;
+        height: 25px;
+        width: 15px;
+    }
+    
+    .input {
+        display: block;
+        width: 100%;
+        font-size: 26px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,73 @@
+.tipsButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 0.7rem;
+}
+
+.text {
+    font-size: 12px;
+    margin-top: 1.2rem;
+    color: var(--medium-grayish-cyan);
+}
+
+.buttonPercent {
+    background: var(--very-dark-cyan);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    width: 75px;
+    height: 30px;
+}
+
+.buttonPercent:focus,
+.buttonPercent:hover {
+    background: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    transition: 300ms ease-in-out;
+}
+
+.customPercent {
+    background-color: var(--light-cyan);
+    color: var(--very-dark-cyan);
+    width: 75px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.customPercent:focus {
+    outline: none;
+    border: 2px solid var(--strong-cyan);
+}
+
+@media (max-width: 375px) {
+    .text {
+        font-size: 18px;
+    }
+
+    .tipsButtons {
+        grid-template-columns: repeat(2, 1fr);
+        width: unset;
+        gap: 20px;
+    }
+
+    .buttonPercent {
+        font-size: 26px;
+        width: 180px;
+        height: 60px;
+    }
+
+    .customPercent {
+        font-size: 26px;
+        width: 180px;
+        height: 60px;
+    }
+}
